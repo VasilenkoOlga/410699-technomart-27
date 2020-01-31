@@ -7,10 +7,12 @@
   <body>
     <header>
       <div class="header-up">
-        <a>Техномарт</a>
+        <a>
+          <img src="img/logo-tehnomart.png" alt="Логотип Техномарт" width="109" height="19">
+        </a>
         <form action="" method="get">
           <input name="search" placeholder="Поиск" type="text">
-          <button type="submit"><img src="https://via.placeholder.com/10x10" alt="Найти"></button>
+          <button type="submit"><img src="img/icon-search.png" alt="Найти"></button>
         </form>
         <a href="#">Закладки</a>
         <a href="#">Корзина</a>
@@ -46,9 +48,93 @@
     </header>
     <main>
       <section class="offers"></section>
-      <section class="popular-products"></section>
-      <section class="popular-manufacturers"></section>
-      <section class="service"></section>
+      <section class="popular-products">
+        <div class="header-popular-products">
+          <h2>Популярные товары</h2>
+          <a href="#" class="button">Все популярные товары</a>
+        </div>
+        <article>
+          <div>
+            <img src="img/Perforator_9000.jpg" alt="Bosch BFG 9000" width="218" height="170">
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+          </div>
+          <h3>Перфоратор Bosch BFG 9000</h3>
+          <a href="#">12500 Р.</a>
+        </article>
+        <article class="new">
+          <div>
+            <img src="img/Perforator_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+          </div>
+          <h3>Перфоратор Bosch BFG 3000</h3>
+          <p><del>22500 Р.</del></p>
+          <a href="#">15500 Р.</a>
+        </article>
+        <article>
+          <div>
+            <img src="img/Perforator_6000.jpg" alt="Bosch BFG 6000" width="218" height="170">
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+          </div>
+          <h3>Перфоратор Bosch BFG 6000</h3>
+          <p><del>30500 Р.</del></p>
+          <a href="#">25500 Р.</a>
+        </article>
+        <article>
+          <div>
+            <img src="img/Perforator_2000.jpg" alt="Bosch BFG 2000" width="218" height="170">
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+          </div>
+          <h3>Перфоратор Bosch BFG 2000</h3>
+          <a href="#">12500 Р.</a>
+        </article>
+      </section>
+      <section class="popular-manufacturers">
+        <div class="header-popular-manufacturers">
+          <h2>Популярные производители</h2>
+          <a href="#" class="button">Все производители</a>
+        </div>
+        <ul>
+          <li><a href="#"><img src="img/bosch.png" alt="Bosch" width="126" height="37"></a></li>
+          <li><a href="#"><img src="img/Makita.png" alt="Makita" width="123" height="40"></a></li>
+          <li><a href="#"><img src="img/DeWALT.png" alt="DeWALT" width="146" height="44"></a></li>
+          <li><a href="#"><img src="img/Interscol.png" alt="Интерскол" width="200" height="88"></a></li>
+          <li><a href="#"><img src="img/Hitachi.png" alt="Hitachi" width="169" height="31"></a></li>
+          <li><a href="#"><img src="img/LG.png" alt="LG" width="121" height="73"></a></li>
+          <li><a href="#"><img src="img/AEG.png" alt="AEG" width="151" height="96"></a></li>
+          <li><a href="#"><img src="img/Metabo.png" alt="Metabo" width="204" height="69"></a></li>
+        </ul>
+      </section>
+      <section class="service">
+        <h2>Сервисы</h2>
+        <div>
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем,
+          поднимая его на ваш этаж!</p>
+          <img src="img/delivery.png" alt="Доставка" width="468" height="261">
+        </div>
+        <div>
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит,
+          а также в случае пожара, спровоцированного его возгоранием,
+          вы всегда можете быть уверены в нашей гарантии.
+          Мы обменяем сгоревший товар на новый.
+          Дом уж восстановите как-нибудь сами.</p>
+          <img src="img/warranty.png" alt="Гарантия" width="389" height="283">
+        </div>
+        <div>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще!
+          Кредитные консультанты придут вам на помощь.</p>
+          <img src="img/credit.png" alt="Кредит" width="465" height="285">
+          <a href="#" class="button">Отправить заявку</a>
+        </div>
+      </section>
       <section class="about-company">
         <div class="info">
           <h2>Компания "Техномарт"</h2>
@@ -73,6 +159,7 @@
             Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
+          <img src="img/map.png" alt="карта как добраться" width="300" height="158">
           <a href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
@@ -80,7 +167,9 @@
     <footer>
       <div class="footer-up">
         <div>
-          <a>Техномарт</a>
+          <a>
+            <img src="img/logo-tehnomart.png" alt="Логотип Техномарт" width="109" height="19">
+          </a>
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
