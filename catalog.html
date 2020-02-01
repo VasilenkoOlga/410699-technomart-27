@@ -10,7 +10,7 @@
         <a href="index.html">
           <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19">
         </a>
-        <form action="" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <input name="search" placeholder="Поиск" type="text">
           <button type="submit"><img src="img/icon-search.svg" alt="Найти"></button>
         </form>
@@ -30,6 +30,7 @@
         </div>
         <div class="user-info">
           <p>Равшан Джамшутович</p>
+          <a href="#"><span class="visually-hidden">Выход</span></a>
             <ul>
               <li><a href="#">Мои заказы</a></li>
               <li><a href="#">Личный кабинет</a></li>
@@ -50,34 +51,73 @@
     </header>
     <main>
       <ul class="bread-crumbs">
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
       <h1>Перфораторы</h1>
-      <!--
       <section class="filter">
         <h2>Фильтр:</h2>
-        <<h3>Цена:</h3>>
-        <h3>Производители:</h3>
+        <form action="https://echo.htmlacademy.ru" method="get">
+        <!--
+        <h3>Цена:</h3>
+        -->
+        <fieldset>
+          <legend>Производители:</legend>
           <ul>
-            <li>Bosch</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-manufacturer" id="bosch" checked>
+              <label for="bosch">Bosch</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-manufacturer" id="interscol">
+              <label for="interscol">Интерскол</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-manufacturer" id="makita" checked>
+              <label for="makita">Makita</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-manufacturer" id="dewalt">
+              <label for="dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-manufacturer" id="hitachi">
+              <label for="hitachi">Hitachi</label>
+            </li>
           </ul>
-        <h3>Питание:</h3>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
           <ul>
-            <li>Аккамуляторные</li>
-            <li>Сетевые</li>
+            <li class="filter-option">
+              <input type="radio" name="power" value="rechargeable_power" id="rechargeable_power" checked>
+              <label for="rechargeable">Аккамуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="power" value="mains_power" id="mains_power">
+              <label for="mains_power">Сетевые</label>
+            </li>
           </ul>
-        <button type="button">Показать</button>
+        </fieldset>
+        <button type="submit">Показать</button>
+        </form>
       </section>
-      -->
       <section class="products-list">
-        <!--Сортировка-->
+        <h2 class="visually-hidden">Список перфораторов</h2>
+        <section class="sorting">
+          <p class="sorting-title">Сортировка:</p>
+          <ul class="sorting-list">
+            <li><a href="#" class="sorting-link">По цене</a></li>
+            <li><a href="#" class="sorting-link">По типу</a></li>
+            <li><a href="#" class="sorting-link">По функционалу</a></li>
+          </ul>
+          <ul class="sorting-control">
+            <li><a href="#" class="icon-up"></a></li>
+            <li><a href="#" class="icon-down"></a></li>
+          </ul>
+        </section>
         <article>
           <div>
             <img src="img/perforator_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
@@ -228,5 +268,15 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal">
+      <h2>Товар добавлен в корзину</h2>
+      <div>
+        <a href="#" class="button">Оформить заказ</a>
+        <button type="button" class="button">Продолжить покупки</a>
+      </div>
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
