@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
@@ -21,7 +21,7 @@ img {
 
 .button {
   cursor: pointer;
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -54,8 +54,8 @@ img {
 }
 /* Header */
 
-header {
-  background-color: f1f5f7;
+.header {
+  background-color: #f1f5f7;
 }
 
 .header-up {
@@ -63,16 +63,15 @@ header {
 
   min-height: 42px;
 
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
-/*Надо что-то делать что бы работало*/
 .search input {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -98,7 +97,7 @@ header {
 }
 
 .header-up a {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -111,7 +110,7 @@ header {
 }
 
 .header-up .header-basket:active,
-.header-up .header-bookmark:active  {
+.header-up .header-bookmark:active {
   background-color: #161d29;
 
   opacity: 0.6;
@@ -126,12 +125,12 @@ header {
 }
 
 .header-medium {
-  background-color: f1f5f7;
+  background-color: #f1f5f7;
 }
 
 .header-medium h1,
 .header-medium .site-info {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -140,11 +139,11 @@ header {
 }
 
 .data-info a {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  color:#ee3643;
+  color: #ee3643;
 }
 
 .user-info a:hover {
@@ -161,19 +160,19 @@ header {
 }
 
 .data-info p {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color:#32425c;
+  color: #32425c;
 }
 
 .user-info a {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  color:#000000;
+  color: #000000;
 }
 
 .user-info li {
@@ -182,11 +181,11 @@ header {
 
 .user-info .orders,
 .user-info .cabinet {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color:#32425c;
+  color: #32425c;
   text-decoration: underline;
 }
 
@@ -209,7 +208,7 @@ header {
 }
 
 .site-navigation a {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 17px;
@@ -235,7 +234,7 @@ header {
 
 .header-popular-products h2,
 .header-popular-manufacturers h2 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -245,7 +244,7 @@ header {
 }
 
 .popular-products h3 {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -257,7 +256,7 @@ header {
 }
 
 .old_price {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -267,7 +266,7 @@ header {
 }
 
 .new_price {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -323,7 +322,7 @@ header {
 }
 
 .service h2 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -333,7 +332,7 @@ header {
 }
 
 .service p {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -341,7 +340,7 @@ header {
 }
 
 .service h3 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -351,7 +350,7 @@ header {
 }
 
 .service .service-text {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -359,7 +358,7 @@ header {
 }
 
 .about-company h2 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -373,7 +372,7 @@ header {
 }
 
 .transport_companies li{
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -381,7 +380,7 @@ header {
 }
 
 .about-company p{
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -395,7 +394,7 @@ header {
 }
 
 .bread-crumbs a {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -409,7 +408,7 @@ header {
 }
 
 .inner-page h1 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -424,7 +423,7 @@ header {
 
 .inner-page h2,
 .sorting-title {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -446,7 +445,7 @@ header {
 }
 
 .filter label {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -473,7 +472,7 @@ header {
 }
 
 .sorting-link {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -502,7 +501,7 @@ header {
 }
 
 .button-page {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -529,7 +528,7 @@ header {
 }
 
 .about-rotary-hammers h2 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -540,7 +539,7 @@ header {
 }
 
 .about-rotary-hammers p {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -557,7 +556,7 @@ header {
 
 .footer-left p,
 .footer-left a {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -567,7 +566,7 @@ header {
 
 .footer-up .footer-up-nav,
 .footer-up .footer-down-nav {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -655,7 +654,7 @@ header {
 
 .appointment-form input[type="text"],
 textarea {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -665,7 +664,7 @@ textarea {
 }
 
 .appointment-form label {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -677,7 +676,7 @@ textarea {
 }
 
 .modal-buy h2 {
-  font-family: "Cuprum","Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
