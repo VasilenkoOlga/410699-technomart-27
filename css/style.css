@@ -63,7 +63,6 @@ img {
 .header {
   background-color: #f1f5f7;
   min-height: 260px; /* временно */
-  margin-bottom: 59px;
 }
 
 .header-up {
@@ -74,11 +73,14 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-
   height: 42px; /* временно */
+
+  margin-bottom: 45px;
+}
+
+.header-up .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
 }
 
 .header-up .logo {
@@ -153,14 +155,14 @@ img {
 }
 
 .header-medium-down {
-  min-width: 278px;  /*временно для сетки*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f1f5f7;
+  padding-bottom: 60px;
 }
 
 .header-medium {
-  background-color: #f1f5f7;
   min-height: 68px;  /*временно для сетки*/
   margin-bottom: 43px;
   display: flex;
@@ -311,7 +313,7 @@ img {
 /* Main */
 
 .offers {
-  margin-top: 119px;
+  margin-top: 74px;
   min-height: 409px;
   margin-bottom: 53px;
   display: flex;
@@ -784,10 +786,9 @@ img {
 
 .active-page {
   color: #ffffff;
+  background-color: #ee3643;
 
   border: none;
-
-  background-color: #ee3643;
 }
 
 .inner-page .about-rotary-hammers {
@@ -837,9 +838,12 @@ img {
 
 .footer-up {
   min-height: 193px;
+  background-color: #32425c;
+}
+
+.footer-up .container {
   display: flex;
   justify-content: space-between;
-  background-color: #32425c;
 }
 
 .footer-up p,
@@ -964,10 +968,14 @@ img {
 .footer-down {
   background-color: #293449;
   min-height: 107px;
+}
+
+.footer-down .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .footer-down p {
   color: #ffffff;
