@@ -72,8 +72,6 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-
-  margin-bottom: 45px;
 }
 
 .header-up .container {
@@ -165,8 +163,7 @@ img {
 }
 
 .header-medium {
-  min-height: 68px;  /*временно для сетки*/
-  margin-bottom: 43px;
+  margin-bottom: 41px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -183,6 +180,7 @@ img {
   color: #ee3643;
   margin-right: 70px;
   width: 200px;
+  margin-top: 49px;
 }
 
 .header-medium .user-info {
@@ -291,7 +289,7 @@ img {
   line-height: 17px;
   color: #ffffff;
   display: block;
-  padding: 20px 30px;
+  padding: 19px 30px;
 }
 
 .site-navigation .first {
@@ -324,11 +322,45 @@ img {
   margin-bottom: 53px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .category {
   width: 300px;
   height: 123px;
+  background-color: #3bbce3;
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.category:nth-child(2) {
+  background-color: #ffbf47;
+}
+
+.category:nth-child(4) {
+  background-color: #dc91d8;
+}
+
+.container-category .category:first-child {
+  background-color: #8ed78f;
+}
+
+.slide {
+  width: 620px;
+  height: 266px;
+}
+
+.container-category .category:last-child {
+  margin-bottom: 0;
 }
 
 .popular-products .header-popular-products,
