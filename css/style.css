@@ -53,7 +53,6 @@ img {
   margin: -1px;
 }
 
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -73,7 +72,6 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  height: 42px; /* временно */
 
   margin-bottom: 45px;
 }
@@ -81,6 +79,7 @@ img {
 .header-up .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-up .logo {
@@ -126,6 +125,9 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  text-align: center;
 }
 
 .header-up .header-bookmark,
@@ -311,9 +313,13 @@ img {
 }
 
 /* Main */
+.home-page .container {
+  display: flex;
+  flex-direction: column;
+}
 
 .offers {
-  margin-top: 74px;
+  margin-top: 60px;
   min-height: 409px;
   margin-bottom: 53px;
   display: flex;
@@ -451,9 +457,6 @@ img {
   background-color: #f1f5f7;
   min-height: 522px; /* временно*/
   margin-bottom: 80px;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .service-top {
@@ -470,6 +473,11 @@ img {
   color: #000000;
 
   text-transform: uppercase;
+}
+
+.service .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .service p {
@@ -505,10 +513,15 @@ img {
 
 .about-company {
   min-height: 370px; /* временно */
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 86px;
 }
+
+.about-company .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 .about-company .info,
 .about-company .contacts {
@@ -583,6 +596,11 @@ img {
 
 /*Main внутренней странцы*/
 
+.inner-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .bread-crumbs li {
   list-style: none;
 }
@@ -611,9 +629,10 @@ img {
   color: #32425c;
   vertical-align: middle;
   text-align: left;
-
-  margin-bottom: 20px;
-  min-height: 90px;   /* Временно для сетки */
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 28px;
 }
 
 .inner-page h2 {
@@ -627,7 +646,7 @@ img {
   display: flex;
   justify-content: flex-start;
 
-  min-height: 60px; /* Временно для сетки */
+  min-height: 58px; /* Временно для сетки */
 }
 
 .inner-page h2,
@@ -644,6 +663,7 @@ img {
 
 .filter-catalog-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .filter {
@@ -793,15 +813,15 @@ img {
 
 .inner-page .about-rotary-hammers {
   background-color: #f2f6f8;
-  min-height: 190px; /* Временно для сетки */
-  display: flex;
-  flex-direction: column;
+}
 
-  margin-bottom: 70px;
+.about-rotary-hammers .container {
+  padding-top: 66px;
+  padding-bottom: 70px;
 }
 
 .about-rotary-hammers-h2,
-.about-rotary-hammers-h2 p {
+.about-rotary-hammers p {
   margin: 0;
   padding: 0;
 }
@@ -816,6 +836,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #f2f6f8;
+  margin-bottom: 24px;
 }
 
 .about-rotary-hammers p {
@@ -978,7 +999,11 @@ img {
 
 
 .footer-down p {
+  padding: 0;
+  margin: 0;
   color: #ffffff;
+  padding-top: 38px;
+  padding-bottom: 40px;
 }
 
 .footer-down a {
