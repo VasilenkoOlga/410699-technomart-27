@@ -15,6 +15,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -68,7 +69,6 @@ img {
 
 .header {
   background-color: #f1f5f7;
-  min-height: 260px; /* временно */
 }
 
 .header-up {
@@ -131,6 +131,22 @@ label.search-label {
   background: url(../img/icon-search.svg) no-repeat;
   background-position: 0 0;
   cursor: pointer;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.search input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.search input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.search input::-ms-input-placeholder {
+  color: #ffffff;
 }
 
 .search input::placeholder {
@@ -484,7 +500,6 @@ label.search-label {
 .site-navigation {
   background-color: #32425c;
   border-bottom: 5px solid #293449;
-  min-height: 55px; /* временно */
   width: 940px;
 }
 
@@ -494,6 +509,7 @@ label.search-label {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .site-navigation  li {
@@ -527,7 +543,6 @@ label.search-label {
 
 .site-navigation a:active {
   opacity: 0.5;
-
   background-color: #1d2739;
 }
 
@@ -771,7 +786,6 @@ label.search-label {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
-
   text-transform: uppercase;
 }
 
@@ -878,7 +892,6 @@ label.search-label {
   margin-top: 10px;
   margin-bottom: 12px;
   margin-left: 3px;
-
   text-transform: uppercase;
 }
 
@@ -945,7 +958,7 @@ label.search-label {
   z-index: 100;
 }
 
-.catalog-item  {
+.catalog-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1053,7 +1066,6 @@ label.search-label {
   color: #000000;
   padding-top: 65px;
   padding-bottom: 25px;
-
   text-transform: uppercase;
 }
 
@@ -1116,15 +1128,15 @@ label.search-label {
 }
 
 .service-list::before {
-    content: "";
-    position: absolute;
-    left: 230px;
-    top: -34px;
-    width: 10px;
-    height: 272px;
-    background-image: url(../img/shadow.png);
-    background-position: 0 0;
-    background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  left: 230px;
+  top: -34px;
+  width: 10px;
+  height: 272px;
+  background-image: url(../img/shadow.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .service-information .service-delivery {
@@ -1133,12 +1145,12 @@ label.search-label {
   padding-right: 500px;
   padding-bottom: 100px;
   background-image: url(../img/delivery.png);
-  background-position: 150px 22px;
+  background-position: 150px 24px;
   background-repeat: no-repeat;
 }
 
 .service-information .service-warranty {
-  width: 380px;
+  width: 375px;
   position: absolute;
   padding-right: 500px;
   padding-bottom: 100px;
@@ -1164,69 +1176,27 @@ label.search-label {
   padding-right: 44px;
 }
 
-.service-list label:active,
-.service-list:checked {
+#button-1:checked ~ .service-list label[for="button-1"],
+#button-2:checked ~ .service-list label[for="button-2"],
+#button-3:checked ~ .service-list label[for="button-3"] {
   color: #32425c;
   background: #ffffff;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-} /* не реагирует на checked */
-
-
-/*
-.service-delivery::before {
-  content: "";
-  position: absolute;
-  left: 150px;
-  top: 24px;
-  width: 468px;
-  height: 261px;
-  background-image: url(../img/delivery.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-*/
-
-/*
-
-.service-information .service-warranty {
-  width: 380px;
-  position: relative;
 }
 
-.service-warranty::before {
-  content: "";
-  position: absolute;
-  left: 150px;
-  top: 24px;
-  width: 389px;
-  height: 283px;
-  background-image: url(../img/warranty.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.service-block {
+  display: none;
 }
 
-.service-information .service-credit {
-  width: 280px;
-  position: relative;
+#button-1:checked ~ .service-information #service-delivery,
+#button-2:checked ~ .service-information #service-warranty,
+#button-3:checked ~ .service-information #service-credit {
+  display: block;
 }
-.service-credit::before {
-  content: "";
-  position: absolute;
-  left: 150px;
-  top: 24px;
-  width: 465px;
-  height: 285px;
-  background-image: url(../img/credit.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-*/
 
 .about-company {
-  min-height: 370px; /* временно */
-  margin-bottom: 87px;
+  margin-bottom: 86px;
 }
 
 .about-company .container {
@@ -1234,11 +1204,6 @@ label.search-label {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 79px;
-}
-
-.about-company .info,
-.about-company .contacts {
-  min-height: 370px; /* временно */
 }
 
 .about-company .info {
@@ -1257,7 +1222,6 @@ label.search-label {
   color: #000000;
   margin: 0;
   margin-bottom: 25px;
-
   text-transform: uppercase;
 }
 
@@ -1265,7 +1229,7 @@ label.search-label {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 41px;
+  margin-bottom: 36px;
 }
 
 .transport_companies li {
@@ -1295,6 +1259,7 @@ label.search-label {
 }
 
 .info .button {
+  display: inline-block;
   padding-bottom: 11px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1325,10 +1290,11 @@ label.search-label {
 }
 
 .contacts img {
-  margin-bottom: 39px;
+  margin-bottom: 34px;
 }
 
 .contacts .button {
+  display: inline-block;
   padding-left: 64px;
   padding-right: 59px;
   padding-bottom: 11px;
@@ -1351,7 +1317,6 @@ label.search-label {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
-
   text-transform: uppercase;
 }
 
@@ -1410,47 +1375,52 @@ label.search-label {
 }
 
 .bread-crumbs li:first-child {
-    margin-left: 14px;
+  margin-left: 14px;
 }
 
 .bread-crumbs li:nth-child(2) {
-    margin-left: 41px;
+  margin-left: 41px;
 }
+
 .bread-crumbs li:nth-child(3) {
-    margin-left: 39px;
+  margin-left: 39px;
 }
+
 .bread-crumbs li:nth-child(4) {
-    margin-left: 43px;
+  margin-left: 43px;
 }
+
 .bread-crumbs li:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: -27px;
-    width: 8px;
-    height: 12px;
-    background: url('../img/icon-right-small.svg') no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -27px;
+  width: 8px;
+  height: 12px;
+  background: url('../img/icon-right-small.svg') no-repeat;
+  background-position: 0 0;
 }
+
 .bread-crumbs li:nth-child(3)::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: -22px;
-    width: 8px;
-    height: 12px;
-    background: url('../img/icon-right-small.svg') no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -22px;
+  width: 8px;
+  height: 12px;
+  background: url('../img/icon-right-small.svg') no-repeat;
+  background-position: 0 0;
 }
+
 .bread-crumbs li:nth-child(4)::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: -24px;
-    width: 8px;
-    height: 12px;
-    background: url('../img/icon-right-small.svg') no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -24px;
+  width: 8px;
+  height: 12px;
+  background: url('../img/icon-right-small.svg') no-repeat;
+  background-position: 0 0;
 }
 
 .inner-page h2,
@@ -1567,7 +1537,10 @@ label.search-label {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1578,7 +1551,7 @@ label.search-label {
   width: 23px;
   height: 23px;
   background: url('../img/checkbox-off.svg') no-repeat;
-  background-position: 0 0;;
+  background-position: 0 0;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1589,7 +1562,7 @@ label.search-label {
   width: 27px;
   height: 23px;
   background: url('../img/checkbox-on.svg') no-repeat;
-  background-position: 0 0;;
+  background-position: 0 0;
 }
 
 .filter-input-radio + label::before {
@@ -1600,7 +1573,7 @@ label.search-label {
   width: 25px;
   height: 25px;
   background: url('../img/radio-off.svg') no-repeat;
-  background-position: 0 0;;
+  background-position: 0 0;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1613,7 +1586,6 @@ label.search-label {
   background: url('../img/radio-on.svg') no-repeat;
   background-position: 0 0;
 }
-
 
 .filter-item {
   margin: 0;
@@ -1732,7 +1704,6 @@ label.search-label {
 
 .sorting {
   background-color: #f7f3ec;
-
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -1783,6 +1754,7 @@ label.search-label {
   padding: 0;
   margin: 0;
 }
+
 .sorting-control .icon-up,
 .sorting-control .icon-down {
   padding: 0;
@@ -1812,13 +1784,11 @@ label.search-label {
   vertical-align: middle;
   text-align: left;
   text-transform: uppercase;
-
   border-bottom: 1px dashed #ee3643;
 }
 
 .sorting-link:hover {
   color: #000000;
-
   border-bottom: 1px solid #ee3643;
 }
 
@@ -1867,13 +1837,12 @@ label.search-label {
 .active-page {
   color: #ffffff;
   background-color: #ee3643;
-
   border: none;
 }
 
 .pagination li:last-child a {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .inner-page .about-rotary-hammers {
@@ -1950,7 +1919,6 @@ label.search-label {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-
   width: 330px;
   padding-left: 2px;
 }
@@ -2000,7 +1968,6 @@ label.search-label {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-
   list-style: none;
 }
 
@@ -2037,7 +2004,6 @@ label.search-label {
 .footer-right a:active,
 .footer-right a:active {
   opacity: 0.5;
-
   text-decoration: none;
 }
 
@@ -2059,7 +2025,6 @@ label.search-label {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .footer-down p {
   padding: 0;
@@ -2101,6 +2066,7 @@ label.search-label {
   text-align: center;
   flex-wrap: wrap;
 }
+
 .social-networks li {
   list-style: none;
   margin-bottom: 5px;
@@ -2206,11 +2172,13 @@ label.search-label {
 }
 
 .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .appointment-form input[type="text"],
@@ -2235,6 +2203,7 @@ textarea {
   display: flex;
   margin-bottom: 20px;
 }
+
 .name,
 .email {
   margin: 0;
@@ -2337,6 +2306,8 @@ textarea:invalid {
   background-position: 0 0;
 }
 
+/*Общие стили кнопок*/
+
 .buttons {
   background-color: #f1f1f1;
   padding-top: 37px;
@@ -2363,5 +2334,4 @@ textarea:invalid {
   background-color: #ffffff;
   box-sizing: border-box;
   width: 220px;
-
 }
