@@ -73,7 +73,6 @@ img {
 
 .header-up {
   background-color: #293449;
-
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -2120,15 +2119,16 @@ label.search-label {
 
 .modal-message,
 .modal-buy {
-  display: none;
+  display: block;
   box-sizing: border-box;
   border-top: 7px solid #ee3643;
   width: 620px;
   margin-left: -310px;
+  z-index: 300;
 }
 
 .modal-map {
-  display: none;
+  display: flex;
   box-sizing: border-box;
   width: 940px;
   margin-left: -470px;
@@ -2158,6 +2158,10 @@ label.search-label {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.modal-close:focus{
+  outline: none;
 }
 
 .modal-close::before,
